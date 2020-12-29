@@ -220,8 +220,16 @@ h3 {
   color: #548693;
 }
 
+.footer-container i {
+  font-family: 'Raleway';
+  color: white;
+  padding: 50px;
+}
+
 .footer-container i:hover {
+  font-family: 'Raleway';
   color: #548693;
+  padding: 50px;
 }
 
 .do-you-know h1{ 
