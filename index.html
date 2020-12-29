@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>A24</title>
+</head>
+
+
+<body>
+
+    <div class="topnav">
+        <div class="logo">
+            <a href="index.html"> <img src="imgs/a24logo.png" alt="A24 Logo" width="30%"></a>
+        </div>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <div class="nav-container">
+                <a href="index.html"> <img src="imgs/a24logo.png" alt="A24 Logo" width="30%"></a>
+                <a href="films.html">notable films</a>
+                <a href="quiz.html">test your knowledge</a>
+                <a href="more.html">more a24</a>
+                <a href="contact.html">contact me</a>
+            </div>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <div class="hamburger">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        </div>
+    </div>
+
+    <div class="annoying"> 
+        <a href="index.html"> <img src="imgs/a24logo.png" alt="A24 Logo"></a>
+    </div>
+    <div class="second-topnav">
+        <a href="films.html">notable films</a>
+        <a href="quiz.html">test your knowledge</a>
+        <a href="more.html">more a24</a>
+        <a href="contact.html">contact me</a>     
+    </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+        </div>
+    </div>
+    <div class="parallax">
+    </div>
+    <a class="button-scroll" href="#main">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABmJLR0QA/wD/AP+gvaeTAAAFDUlEQVRoge2ay28bVRTGvzPjuJ04iePWOIXELnGSNtXQRs6MlQWwolJLCxKqBIt2hUACljwW8D8UViBBBSxA3RUkNpSKx8qLSJnBSkglmrZRaJ6TNCGBoLZOPYdFndJ6ZjzPhC7yLc+95/HzPHzvuQPsaEc7CiOKOiAzC5qmDQiCIDPzAWbuIKKW2tg6ERlENFGtVseLxeIYEZlR5o8E6PLly/Fbt26dAHAGwHMAUh5dVwD8zMznm5ubL8qyXAlbSyigUqnUKknSm8z8DoB9IWuZB/ChJEmfybK8HjRIYCBd119k5k8AZIPGcNA8M7+vqurXRMR+nX0DDQ8Pt8Visc8BvOzX16e+i8fjrx45cuRPP06+gDRN6wfwPYBuP34hNMnMJ4rF4hWvDp6BdF1XmPkHAOlApQXXEhE9ryiK7mWyJ6ByudxXrVZLADKhSguumwCeVVX1d7eJrkBjY2OpSqWiY/tuMydNiqKoFAqF1UaTBLcolUrlS/z/MACQv3v37hdukxoCaZp2GsBLkZUUUkR0Stf1VxrOcRoolUqtu3fvvgLg8cgrC6fZpqamgwMDA//YDTpeoV27dr2FRw8GADo3NjbecBq0vUK1tdkfCL+c2SrNAXhSVdWN+gHbK3T79u2TeHRhAOAJIjpuN2ALxMynt7ae8DJN84yd3QLEzALubQE8S5KkgGUFj0FER2u1PiSLQdO0AXjfzyCbzeLQoUNIJpO+CnpQbW1t6O/vx/79+/247S2Xy4frjXa33FNeI2azWWQyGRAR8vk8Wltb/RQEAEgmk+jp6YEgCEin076gTNOU620WICI64CVYLpdDJvPf0k4QBPT29vqCam9vvw+zqXQ6jVwu5zXEwXqDHdBjXiLduXPHYvMDlUwmkc/nQWT959jYsLyNnWRZ+du9FFq8RDIMAzMzMxa7F6hUKoWenh5bmNnZWczPz3spAczcZsnvydNBblAtLdbfJpVKobu72xZmenoaCwsLYUqyveV8NSjcoBKJxH2bG8zi4qKf1CCivyx56w3M7C8qnKFEUURfXx8SiQT27NnjCHPjxg3fMLVal+ptMZtJV+2SuskwDBAROjs7H7JvQgmCYAszNTWF5eVl3/kAgIgm6m12V+i3QNEBLCwsOF6pehhmDgUDAEQ0brHVG5hZ0HV9EcDeoIk6OjrQ1dXlOL4Js7KyEjQFACwripKpbyXbvRRMAL+EyeT0TAGRwYCIfrTrizutts+HygZ7KGbG5ORkaJiabGu0BWpubr6Ie73mUHoQahNmdbVh08ar5pj5kt2ALVDtFOCjKDJvQl2/fj0qGDDzWbvdKtBgpSBJ0qe4t9UNLcMwsLa2FkUoAJiJx+PnnAYdgWRZXmfmd6OqIiox89tOHR/AQ+d0ZGTkGyI6FW1ZgXVBVdWGpx6ui9NYLPYagMnISgquawBed5vkClQoFFaJ6BgAI4qqAuomM7+gqqrrg+hp+6AoyjUiOgnAshjcBi0BOOb1jMjzfkhRFL1arT6D7b39romi+LSqqr96dfC1wRsaGpoQRVFh5m/91+ZbFwCohULhqh+nsIfGHwPw3NHwqDlm/qBYLH4VxDnUsf7o6Gii1jh/D+Eb+3PMfDYej59r9D/jpkg+vNA0rYmIjpumeYaIjsL71uMmEf0E4DwzX3JazvjRlnwaUy6XD5umKTPzAUEQ9j3QSfqbmQ0imiCi8cHBwfGoP43Z0Y52FE7/Ahnr4e+qar89AAAAAElFTkSuQmCC" alt="Arrow Down Icon">
+    </a>
+
+    <main id="main"></main>
+<div class="home-container">
+    <div class="home-item1">
+        <h1>About A24</h1>
+        <h2>The Little Studio That Could</h2>
+    </div>
+    <div class="home-item2">
+            <img src="imgs/a24founders.jpg" alt="Daniel Katz, David Fenkel, and John Hodges">
+        </div>
+    <div class="home-item3">
+        <p>A24 is an American independent film distributor that has made its name as a top indie film house known for its authentic, intelligent, and aesthetically pleasing films. Founded on August 20, 2012 by film veterans Daniel Katz, David Fenkel, and John Hodges, A24 quickly became a champion in distribution. A Glimpse Inside the Mind of Charles Swan III, A24’s first official theatrical release, laid the foundation for small, artistic films that attract a particular audience.
+        </p>
+        <p>From there, the company started becoming a hot topic in the film industry after distributing Spring Breakers, The Bling Ring, and The Spectacular Now in 2013. It’s a rare occurrence that a distribution company receives recognition; therefore, A24’s ability to draw attention to itself within the film industry. With its distinct aesthetic, notable actors, and indie plot lines, A24 has set itself apart and is becoming a household name.
+        </p>
+        <p>Despite being relatively young, A24 secured its spot in the competitive industry. As of October 2020, the company has released over 100 movies, many of which have been nominated for hundreds of awards. In 2016, Moonlight took home the award for Best Picture Oscar and Best Adapted Screenplay, further solidifying A24’s position in the industry. As A24 continues to put out more films that push powerful and captivating narratives, the culture and fanbase will continue to grow.
+        </p>
+    </div>
+
+    <div class="decoration">
+        <img src="imgs/random.png" alt="">
+    </div>
+
+    <div class="home-item5">
+    <h1>A Film Major @ Heart</h1>
+    <h2>The Little Girl That Loved Movies</h2>
+      <p>
+        As a little kid, the best Fridays were always ones where I got to pick out a movie from Blockbuster and watch it with my dad. </br>  </br> Now, I can’t make it through a movie without stopping to point out a fun fact, acknowledge a breathtaking camera shot, or try to explain the deeper meaning behind why the walls are a certain color. Without a doubt in my mind, I am a film major in an alternative universe
+    </p>
+    <p>
+        Although my career ambitions have since then transitioned into technology focused interests, my love for film has still remained. </br> </br> I decided to combine my passions for web development & design and movies to create a website paying homage to my favorite production company: A24.
+    </p>
+    </div>
+    <div class="home-item6 button">
+        <a href="films.html">My Favorite A24 Films >></a>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <i href="https://twitter.com/A24" class="fa fa-twitter"></i>
+        <a href="https://a24films.com/">a24films.com</a>
+        <a href="https://courtneyfortin.com/">&#169 Courtney Fortin 2020</a>
+    </div>
+</footer>
+
+</body>

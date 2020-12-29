@@ -1,0 +1,1288 @@
+.logo img{
+    display: block;
+    width: 100px;
+    }
+
+a.skip {
+    font-family: 'Raleway', monospace;
+    color: black;
+    text-decoration: underline;
+}
+
+.footer-container a {
+  font-family: 'Raleway', monospace;
+  color: white;
+  padding: 50px;
+  text-decoration: none;
+}
+
+h1 { 
+  font-family: 'Oswald', monospace;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Oswald';
+  font-size: 22px;
+}
+
+h3 {
+  font-family: 'Raleway', monospace;
+}
+.second-topnav {
+    display: none;
+}
+
+.annoying {
+    display: none;
+}
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 15px 24px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    font-family: 'Oswald', monospace;
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navcontainer img {
+      display: none;
+  }
+
+  .topnav a.icon:hover {
+    background: teal;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+.topnav #myLinks a {
+    font-family: 'Oswald', monospace;
+    list-style: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.topnav #myLinks a:hover {
+    font-family: 'Oswald', monospace;
+    color: #548693;
+}
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: maroon;
+    color: white;
+  }
+
+  .parallax {
+    height: 300px;
+    background-image: url("../imgs/home.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .button-scroll {
+        display: none;
+    }
+
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-row: auto auto auto auto auto auto;
+}
+
+.home-item1 {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+
+.home-item2 {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+}
+
+.home-item2 img {
+    display: none;
+}
+
+
+.home-item3 {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+}
+
+.home-item4 {
+    grid-column: 1 / -1;
+    grid-row: 4;
+}
+
+.home-item4 img {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home-item5 {
+  margin-top: 50px;
+  grid-column: 2 / span 1;
+  grid-row: 4;
+}
+
+.home-item6 {
+  grid-column: 2 / span 1; 
+  grid-row: 5;
+}
+
+.decoration {
+  display: none;
+}
+
+.button a {
+  font-family: 'Oswald', monospace;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.button {
+  border: 3px solid lightblue;
+  border-radius: 5px;
+  padding: 5px; 
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button:hover{
+  background-color: lightblue;
+  border: 3px solid lightblue;
+  border-radius: 5px;
+  padding: 5px; 
+  text-align: center;
+}
+
+.home-container h1{
+    font-family: 'Oswald', monospace;
+    font-size: 50px;
+}
+
+.home-container h2{
+    font-family: 'Oswald', monospace;
+    font-size: 22px;
+}
+
+.home-container p {
+    font-family: 'Raleway', monospace;
+}
+
+
+/* Footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.footer-container a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: #548693;
+}
+
+.footer-container i:hover {
+  color: #548693;
+}
+
+.do-you-know h1{ 
+    font-family: 'Oswald', monospace;
+  }
+
+  .do-you-know h3 {
+    font-family: 'Raleway', monospace;
+  }
+
+  .do-you-know {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+  }
+
+
+  .flip-card {
+    justify-content: center;
+    background-color: transparent;
+    width: 360px;
+    height: 250px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+    
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-back h1 {
+    color: white;
+    font-family: 'Oswald', monospace;
+  }
+
+  .movie-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  }
+
+  .movie-container img {
+    width: 100%;
+  }
+
+  .lady-bird {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+  }
+
+  .eighth-grade {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+  }
+
+  .hereditary {
+    grid-column: 2 / span 1;
+    grid-row: 4;
+  }  
+
+  .midsommar {
+    grid-column: 2 / span 1;
+    grid-row: 5;
+  } 
+  
+  .moonlight {
+    grid-column: 2 / span 1;
+    grid-row: 6;
+  }
+
+  .lobster {
+    grid-column: 2 / span 1;
+    grid-row: 7;
+  }
+
+  .uncut {
+    grid-column: 2 / span 1;
+    grid-row: 8;
+  }
+
+  .springbreakers {
+    grid-column: 2 / span 1;
+    grid-row: 9;
+  }
+
+  .exmachina {
+    grid-column: 2 / span 1;
+    grid-row: 10;
+  }
+
+  .button {
+    grid-column: 2 / span 1; 
+    grid-row: 11;
+  }
+
+
+
+  .films-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .films-container img {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+  }
+
+  .ladybird-stars img{
+    width: 45%;
+    height: auto;
+    border: none;
+  }
+
+  .disaster-stars img{
+    width: 45%;
+    height: auto;
+    border: none;
+  }
+
+  .lobster-stars img{
+    width: 45%;
+    height: auto;
+    border: none;
+  }
+
+  .text-one{	
+    font-family: 'Oswald';
+    background-color: rgba(255, 255, 255, .8);	
+    padding: 5px;	
+    align-self: center;
+    }	
+  
+    .text-one p {
+      font-family: 'Raleway';
+    }
+  
+  /* Contact Form */
+  
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px; 
+    display: inline-block;
+    border: 2px solid #548693;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    margin: 8px 2px;
+    }
+    
+    button[type=submit] {
+    width: 100%;
+    background-color: #000000;
+    font-size: 24px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+    
+    button[type=submit]:hover {
+    background-color: #548693;
+    }
+    
+    textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px; 
+    margin: 8px 2px;
+    box-sizing: border-box;
+    border: 2px solid #548693;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    }
+    
+  
+    .contact-form{
+      grid-column: 2 / span 1;
+      grid-row: 1;
+    }
+  
+    .contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    }
+  
+    label { 
+      font-family: 'Oswald';
+    }
+  
+    input { 
+      font-family: 'Raleway';
+    }
+  
+    textarea { 
+      font-family: 'Raleway';
+    }
+
+    .animated-title {
+      display: none;
+    }
+
+    .pic img {
+      width: 80%;
+      margin: 20px;
+    }
+      
+.more-container {
+  display: grid;
+}
+
+iframe {
+  opacity: 1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rbga(0, 0, 0, 0.4);
+}
+
+.playlist {
+  height: 100%;
+}
+
+
+.more-container {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.more-top {
+  grid-column: 2 / span 1;
+  grid-row: 1;
+}
+
+.filmography {
+  grid-column: 2 / span 1;
+  grid-row: 2;
+  padding: 10px;
+}
+
+.shop {
+  grid-column: 2 / span 1;
+  grid-row: 3;
+  padding: 10px;
+}
+
+
+.podcast {
+  grid-column: 2 / span 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+
+.playlist {
+  grid-column: 2 / span 1;
+  grid-row: 5;
+  padding: 10px;
+}
+
+  
+ 
+@media (min-width: 600px){
+    
+    .hamburger {
+        display: none;
+    }
+
+    .annoying {
+        display: none;
+    }
+
+    .button-scroll {
+        display: none;
+    }
+
+    .nav-container {
+    display: flex; 
+    flex-direction: column;
+    }
+
+    .parallax {
+        height: 400px;
+        background-image: url("../imgs/home.png");
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+    .topnav {
+        background: white;
+    }
+    .topnav #myLinks {
+        display: block;
+      }
+
+      .topnav #myLinks a{
+        background: white;
+        color: black;
+        font-size: 20px;
+        padding: 5px;
+      }
+    
+    .icon a{
+        display: none;
+    }
+
+    .logo a{
+        display: none;
+    }
+
+    .current a {
+      text-transform: uppercase;
+      background-color:#548693;
+      padding: 5px;
+      color: white;
+      }
+
+      .current:hover a {
+        text-transform: uppercase;
+        background-color:#548693;
+        text-decoration: none;
+        padding: 5px;
+        color: black;
+        }
+
+        .home-container {
+          display: grid;
+          grid-template-columns: 1fr 3fr 5fr 3fr 1fr;
+          grid-row: auto auto auto auto auto;
+      }
+      .home-item6 {
+        grid-column: 4 / span 1;
+      }
+
+        .home-item1 {
+            grid-column: 2 / span 2;
+            grid-row: 1;
+        }
+        
+        .home-item2 {
+            grid-column: 3 / span 2;
+            grid-row: 2;
+        }
+        
+        .home-item2 img {
+            width: 100%;
+        }
+        
+        .home-item3 {
+            grid-column: 2 / span 2;
+            grid-row: 2;
+        }
+
+        .decoration {
+          display: grid;
+          grid-column: 2 / span 3;
+          grid-row: 3;
+        }
+        
+        .home-item4 {
+            display: none;
+        }
+        
+        .home-item5 {
+            grid-column: 3 / span 2;
+            grid-row: 4;
+        }
+
+        .button {
+          border: 3px solid lightblue;
+        }
+        .button:hover {
+          border: 3px solid lightblue;
+          background-color: lightblue;
+          color: white;
+        }
+      
+        .button a{
+          color: black;
+        }
+          
+  
+  .ladybird-stars img{
+    width: 25%;
+    height: auto;
+    border: none;
+  }
+
+  .disaster-stars img{
+    width: 25%;
+    height: auto;
+    border: none;
+  }
+
+  .lobster-stars img{
+    width: 25%;
+    height: auto;
+    border: none;
+  }
+
+  .movie-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .movie-container img {
+    width: 100%;
+  }
+
+  .do-you-know {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+  }
+
+  .lady-bird {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+  }
+
+  .eighth-grade {
+    grid-column: 3 / span 1;
+    grid-row: 2;
+  }
+
+  .hereditary {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+  }  
+
+  .midsommar {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+  } 
+  
+  .moonlight {
+    grid-column: 2 / span 1;
+    grid-row: 4;
+  }
+
+  .lobster {
+    grid-column: 3 / span 1;
+    grid-row: 4;
+  }
+
+  .uncut {
+    grid-column: 2 / span 1;
+    grid-row: 5;
+  }
+
+  .springbreakers {
+    grid-column: 3 / span 1;
+    grid-row: 5;
+  }
+
+  .exmachina {
+    grid-column: 2 / span 1;
+    grid-row: 6;
+  }
+
+  .button {
+    grid-column: 3 / span 1;
+    grid-row: 6;
+  }
+
+  .animated-title {
+    display: none;
+  }
+
+  .more-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .more-top {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+
+  .filmography {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    padding: 10px;
+    opacity: .7;
+  }
+
+  .filmography:hover {
+    opacity: 1;
+  }
+
+  .shop {
+    grid-column: 3 / span 1;
+    grid-row: 2;
+    padding: 10px;
+    opacity: .7;
+  }
+
+  .shop:hover {
+    opacity: 1;
+  }
+
+  .podcast {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+    padding: 10px;
+    opacity: .7;
+  }
+
+  .podcast:hover {
+    opacity: 1;
+  }
+
+  .playlist {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+    padding: 10px;
+    opacity: .7;
+  }
+
+  .playlist:hover {
+    opacity: 1;
+  }
+        
+}
+
+@media (min-width: 1025px) {
+
+    .parallax {
+        margin: 50px;
+        height: 500px;
+        background-image: url("../imgs/home.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    
+    .button-scroll {
+        display: block;
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .annoying {
+        display: block;
+    }
+
+    .annoying img{
+        display: block;
+        width: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+    }
+
+    .second-topnav {
+        display: flex; 
+        flex-direction: row;
+        background: white;
+        justify-content: space-around;
+        padding-top: 20px;
+        box-shadow: 0 4px 8px 0 rbga(0, 0, 0, 0.2);
+    }
+
+    .second-topnav a {
+        font-family: 'Oswald', monospace;   
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .second-topnav a:hover {
+        font-family: 'Oswald', monospace;   
+        color: #548693;
+    }
+
+    .second-topnav img{
+        width: 20%
+    }
+
+    .navcontainer img {
+        padding: 30px;
+    }
+
+    .home-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr 5fr 3fr 1fr;
+      grid-row: auto auto auto auto auto;
+  }
+  
+  .home-item1 {
+      grid-column: 2 / span 3;
+      grid-row: 1;
+  }
+  
+  .home-item2 {
+      grid-column: 3 / span 2;
+      grid-row: 1;
+  }
+  
+  .home-item2 img {
+      width: 100%;
+  }
+  
+  
+  .home-item3 {
+      grid-column: 2 / span 2;
+      grid-row: 2;
+  }
+  
+  .home-item4 {
+      grid-column: 2 / span 3;
+      grid-row: 4;
+  }
+  
+  .home-item4 img {
+    width: 100%;
+  }
+  
+  .home-item5 {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+  }
+
+  .decoration {
+    display: grid;
+    grid-column: 2 / span 4;
+    grid-row: 3;
+  }
+
+  .decoration img {
+    width: 100%;
+  }
+
+
+  .button {
+    border: 3px solid lightblue;
+  }
+  .button:hover {
+    border: 3px solid lightblue;
+    background-color: lightblue;
+    color: white;
+  }
+
+  .movie-two img {
+    width: 97%;
+  }
+
+
+  .ladybird-stars img{
+    width: 50%;
+    height: auto;
+    border: none;
+  }
+
+  .disaster-stars img{
+    width: 50%;
+    height: auto;
+    border: none;
+  }
+
+  .lobster-stars img{
+    width: 50%;
+    height: auto;
+    border: none;
+  }
+  .button a{
+    color: black;
+  }
+    
+    .current a {
+        text-transform: uppercase;
+        background-color:#548693;
+        padding: 5px;
+        color: white;
+        }
+
+        .current:hover a {
+          text-transform: uppercase;
+          background-color:#548693;
+          text-decoration: none;
+          padding: 5px;
+          color: black;
+          }
+
+    .logo a{
+        display: none;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .movie-container {
+      display: grid;
+      grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
+      justify-content: space-between;
+      }
+      
+      .do-you-know {
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 1;
+      }
+
+      .lady-bird {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        width: 100%;
+      }
+      
+      .eighth-grade {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        width: 100%;
+      }
+      
+      .hereditary {
+        grid-column: 4 / span 1;
+        grid-row: 2 / span 1;
+        width: 100%;
+      }
+      
+      .midsommar {
+        grid-column: 2;
+        grid-row: 3 / span 1;
+      }
+      
+      .moonlight {
+        grid-column: 3 / span 1;
+        grid-row: 3 / span 1;
+      }
+      
+      .lobster {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 1;
+      }
+      
+      .uncut {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+      }
+      
+      .springbreakers {
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1;
+      }
+      
+      .exmachina {
+        grid-column: 4 / span 1;
+        grid-row: 4 / span 1;
+      }
+
+      
+      .flip-card {
+        justify-content: center;
+        background-color: transparent;
+        width: 400px;
+        height: 250px;
+        perspective: 1000px;
+      }
+
+      .flip-card img {
+        width: 400px;
+        height: 250px;
+        perspective: 1000px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      
+      .flip-card:focus .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: white;
+        color: black;
+      }
+        
+      .flip-card-back {
+        background-color: black;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-back h1 {
+        color: white;
+      }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        }
+        
+        .footer-container a {
+            font-family: 'Raleway';
+            color: white;
+            padding: 50px;
+            text-decoration: none;
+        }
+        
+        .footer-container a:hover {
+          color: #548693;
+        }
+
+        .films-container {
+          display: grid;
+          grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
+          justify-content: space-between;
+          column-gap: 30px;
+        }
+
+        .button {
+          grid-column: 4; 
+          grid-row: 6;
+        }
+
+        .myfav {
+          grid-column: 2 / span 3;
+        }
+
+        .movie-one {
+          grid-column: 2 / span 1;
+        }
+
+        .contact-container {
+          display: flex;
+          flex-direction: row;
+        }
+
+    .pic {
+      display: none;
+    }
+
+
+  /* Animated text inspired from codepen.io/alvaromontoro/pen/RmRjvg */
+  @keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    40%, 60% { transform: translate3d(0, 50%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+    }
+    @keyframes showBottomText {
+    0% { transform: translate3d(0, -100%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+    }
+
+    .animated-title {
+    display: block;
+    color: #222;
+    font-family: 'Oswald';
+    height: 85vh;
+    left: 25%;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    width: 90vmin;
+    padding-left: 50px;
+    }
+    
+    .animated-title > div {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    }
+    .animated-title > div div {
+    font-size: 10vmin;
+    position: absolute;
+    }
+    .animated-title > div div span {
+    display: block;
+    }
+    .animated-title > div.text-top {
+    border-bottom: .5vmin solid #000;
+    }
+    .animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+    }
+    .animated-title > div.text-top div span:first-child {
+      color: #548693;
+    }
+    .animated-title > div.text-bottom {
+    bottom: 50;
+    }
+    .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+    }
+
+    .more-container {
+      display: grid;
+      grid-template-columns: 1fr 4fr 4fr 4fr 4fr 1fr;
+      grid-template-rows: auto auto auto;
+    }
+
+    .more-top {
+      grid-column: 2 / span 4;
+      grid-row: 1;
+    }
+
+    .filmography {
+      grid-column: 3 / span 1;
+      grid-row: 2;
+      padding: 10px;
+    }
+
+    .podcast {
+      grid-column: 4 / span 1;
+      grid-row: 2;
+      padding: 10px;
+    }
+
+    .podcast iframe {
+      height: 75%;
+      opacity: .8;
+    }
+
+    .podcast h2 {
+      display: none;
+    }
+
+    .podcast:hover h2 {
+      display: block;
+    } 
+
+    .podcast:hover iframe {
+      opacity: 1;
+    }
+
+    .playlist iframe {
+      height: 65%;
+      opacity: .8;
+    }
+
+    .playlist:hover iframe {
+      opacity: 1;
+      display: block;
+    }
+
+    .playlist h2 {
+      display:none;
+    }
+
+    .playlist:hover h2 {
+      display:block;
+    }
+
+    .shop, .filmography {
+      opacity: .6;  
+    }
+
+    .filmography h2 {
+      display:none;
+    }
+
+    .filmography:hover h2 {
+      display: block;
+    }
+
+
+    .shop h2 {
+      display:none;
+    }
+
+
+    .shop:hover h2 {
+      display: block;
+    }
+
+  .filmography:hover, .shop:hover {
+      opacity: 1;  
+    }
+
+    .playlist {
+      grid-column: 2 / span 1;
+      grid-row: 2;
+      padding: 10px;
+    }
+
+    .shop {
+      grid-column: 5 / span 1;
+      grid-row: 2;
+      padding: 10px;
+    }
+
+    .more-button {
+      grid-column: 5 / span 1;
+      grid-row: 3;
+    }
+
+}
