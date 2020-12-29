@@ -570,17 +570,17 @@ iframe {
 
     .current a {
       text-transform: uppercase;
-      background-color:#548693;
+      background-color:black;
       padding: 5px;
       color: white;
       }
 
       .current:hover a {
         text-transform: uppercase;
-        background-color:#548693;
+        background-color: 548693;
         text-decoration: none;
         padding: 5px;
-        color: black;
+        color: white;
         }
 
         .home-container {
@@ -940,17 +940,17 @@ iframe {
     
     .current a {
         text-transform: uppercase;
-        background-color:#548693;
+        background-color:black;
         padding: 5px;
         color: white;
         }
 
         .current:hover a {
           text-transform: uppercase;
-          background-color:#548693;
+          background-color: #548693;
           text-decoration: none;
           padding: 5px;
-          color: black;
+          color: white;
           }
 
     .logo a{
